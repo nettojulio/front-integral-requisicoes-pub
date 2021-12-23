@@ -42,7 +42,7 @@ cepInput.addEventListener('change', function () {
     }
 
 
-    const promiseResposta = fetch(`http://viacep.com.br/ws/${cepInput.value}/json/`);
+    const promiseResposta = fetch(`https://viacep.com.br/ws/${cepInput.value}/json/`);
 
     promiseResposta.then(function (respostaVerdadeira) {
         if (!respostaVerdadeira.ok) {
